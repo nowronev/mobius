@@ -96,7 +96,7 @@ void resp_callback(String topic, JsonObject &root) {
 
 void noti_callback(String topic, JsonObject &root) {
     if (state == "create_cin") {
-        if (root["pc"]["sgn"]["sur"] == (nCube.resource[3].to + "/" + nCube.resource[3].rn)) { // guide: uri of subscription resource for notification
+        if (root["pc"]["sgn"]["sur"] == (nCube.resource[4].to + "/" + nCube.resource[4].rn)) { // guide: uri of subscription resource for notification
             String con = root["pc"]["sgn"]["nev"]["rep"]["m2m:cin"]["con"];
             noti_con = con;
 

@@ -16,7 +16,7 @@
 #include "OTAStorage.h"
 #include "InternalStorage.h"
 
-#define FIRMWARE_SERVER_HOST "203.254.173.163"
+#define FIRMWARE_SERVER_HOST "203.203.128.161"
 #define FIRMWARE_SERVER_PORT 8730
 
 //#define VERSION_CHECK_TIME 1000 * 60 * 2
