@@ -41,22 +41,22 @@ Adafrui Feather M0 is not an Arduino official device. So it needs some configura
 <img src="https://user-images.githubusercontent.com/29790334/28244187-eff4f104-6a1d-11e7-93b6-1997d4054ab9.png" width="600">
 </div>
 
-- Open "Tools>Serial Monitor" for view the log.
+- Open "Tools>Serial Monitor" for view the log.<br/>
 
 <div align="left">
 <img src="https://user-images.githubusercontent.com/29790334/28244217-f855df1a-6a1e-11e7-86ae-d09b2d438086.png" width="480">
-</div>
+</div><br/>
 
 - Change the source as need.
 - Click "upload" button on top of Arduino IDE.
 - Connect pc WiFi to SSID "wifi101-3B3E".
-- Open the link "http://wifi101.local".
+- Open the link "http://wifi101.local".<br/>
 
 <div align="left">
 <img src="https://user-images.githubusercontent.com/29790334/28244236-aaba4556-6a1f-11e7-92db-ee807222bf45.png" width="400">
 </div>
 
-- Input the WiFi connection information on the page and click connection button.
+- Input the WiFi connection information on the page and click connection button.<br/>
 
 <div align="left">
 <img src="https://user-images.githubusercontent.com/29790334/28244247-fb989342-6a1f-11e7-8e89-6e33ad868291.png" width="600">
