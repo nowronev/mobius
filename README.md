@@ -66,6 +66,50 @@ Adafrui Feather M0 is not an Arduino official device. So it needs some configura
 <img src="https://user-images.githubusercontent.com/29790334/28244248-0a759f90-6a20-11e7-8d7c-62e6a0e80fe6.png" width="600">
 </div><br/>
 
+
+
+# Over The Air(OTA)
+OTA (Over The Air) means the programmer can code on local and send it to device to make it upgrade or replace with new firmware through the cloud. In Arduino, some developer finds a new way to update the Arduino sketch online. It makes developer who install the wireless Arduino device in a place where is difficult to touch can be update without uninstall.
+
+![image](https://user-images.githubusercontent.com/29790334/28252674-b3accaae-6ad2-11e7-95bc-0a142a8a4633.png)
+
+## nCube-Mint-OTA
+
+In some case user have a kind of light weight WIFI device. Just like Arduino Yun or Arduino UNO with WIFI shield. And they can access internet directly without any gateway’s help. That is reason why we make &Cube-Mint software. It is a light weight C++ program for make a Adafruit Feather M0 WIFI board (A kind of Arduino M0 board) connect with Mobius-yt IoT Server Platform (More info in the IoT-Ocean Site). As mentioned above, the user maybe need to upgrade the program without touching. So, we support another software witch named &Cube-Mint OTA to help them upgrading the software throw the internet. 
+
+![image](https://user-images.githubusercontent.com/29790334/28252678-cb023dba-6ad2-11e7-840a-825906fd25e0.png)
+
+## Example
+
+1. first firmware
+- Open "File>Examples>oneM2MClient>nCube-Mint-OTA".
+- Check	“FIRMWARE_VERSION”, "AE_ID" and "buildResource()".
+- Upload sketch to board.
+
+2. update firmware
+- Check	“FIRMWARE_VERSION”, "AE_ID"(raise the version number).
+- Compile the new ".Hex" file.
+```
+C:\Users\[user]\AppData\Local\Temp\arduino_build_********
+```
+- Open OTA Server website "http://203.253.128.161:8730"
+![image](https://user-images.githubusercontent.com/29790334/28252742-16d533b8-6ad4-11e7-819a-b60ed5240421.png)
+- Upload ".Hex" file.
+- Send update command with HTTP request
+```
+POST /mobius-yt/[your-ae]/update
+Host: 203.253.128.161:7579
+Accept: application/json
+X-M2M-RI: 12345
+X-M2M-Origin: [your-ae]
+Content-Type: application/vnd.onem2m-res+json; ty=4
+
+{"m2m:cin":{"con":"active"}}
+```
+## OTA Result
+
+![1](https://user-images.githubusercontent.com/29790334/28252773-fd39e984-6ad4-11e7-9cbb-8fd721186da6.png)
+
 ## Dependency Libraries
 
 - ArduinoJson
@@ -76,6 +120,11 @@ Adafrui Feather M0 is not an Arduino official device. So it needs some configura
 - WiFi101OTA
 
 ## Document
+
+If you want known more detail, please refer the document below.
+
+- nCube-Mint instllation guide
+- nCube-Mint-OTA installation guide
 
 # Author
 Il Yeup (iyahn@keti.re.kr; ryeubi@gmail.com)
