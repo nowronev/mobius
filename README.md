@@ -115,9 +115,11 @@ Content-Type: application/vnd.onem2m-res+json; ty=4
 - ArduinoJson
 - FlashStorage
 - PubSubClient
-- TasCO2
 - WiFi101
 - WiFi101OTA
+- TasCO2: CM1106 CO2 Sensor library(Made by KETI)
+- OneM2MClient: Mobius client library(Made by KETI)
+- OverTheAir: Device Online upgrade module(Made by KETI)
 
 ## Document
 
