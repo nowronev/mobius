@@ -123,8 +123,8 @@ Content-Type: application/vnd.onem2m-res+json; ty=4
 
 If you want known more detail, please refer the document below.
 
-- nCube-Mint instllation guide
-- nCube-Mint-OTA installation guide
+- nCube-Mint [instllation guide](https://github.com/IoTKETI/nCube-Thyme-Arduino/raw/master/doc/nCube-Mint_v1.0.docx)
+- nCube-Mint-OTA [installation guide](https://github.com/IoTKETI/nCube-Thyme-Arduino/raw/master/doc/nCube-Mint-OTA_v1.0.docx)
 
 # Author
 Il Yeup (iyahn@keti.re.kr; ryeubi@gmail.com)
